@@ -40,11 +40,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 
-    implementation("com.github.bumptech.glide:glide:3.7.0")
-    implementation("org.litepal.guolindev:core:3.2.3")
-    implementation("com.squareup.okhttp3:okhttp:3.4.1")
-    implementation("com.google.code.gson:gson:2.7")
-
+    implementation("com.google.code.gson:gson:2.11.0")
     implementation(files("libs/litepal-2.0.0-src.jar"))
 }
