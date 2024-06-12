@@ -1,19 +1,12 @@
 # coolweather
 Android 第一行代码（第二版）的实战项目
 酷欧天气 coolweather
-
 使用的开源库
 okHttp
 Glide
 gson
 在写的过程遇见过一些问题
-okHttp3 开源框架下，实现的sendOkHttpRequest ，收到接口地址访问结果，status != ok ，总是onFailure情况。
-
-模拟器上可以运行，手机上加载失败（加载城市）。 在queryCounties中调用 queryFromServer（）目的是获得服务器返回的天气数据。通过sendOkHttpRequesst()方法。返回callback 进入了onFailure（）方法。
-
-模拟器能够跑起来，URL这些是没有问题的。
-
-手机使用的Android 9.0 应该需要在某处设置一些参数。(已解决)
+okHttp3 开源框架下，实现的sendOkHttpRequest ，收到接口地址访问结果，status != ok ，总是onFailure情况。模拟器使用的Android 9.0 应该需要在某处设置一些参数。(已解决)
 
 private void queryCounties(){
     //访问服务器 获取数据
@@ -89,6 +82,4 @@ private void queryCounties(){
 在AndroidManifest.xml文件中,Application标签下添加如下属性:
 
 android:networkSecurityConfig="@xml/network_security_config"
-————————————————
 
-方法来源：https://blog.csdn.net/code_hero666/article/details/89478122
