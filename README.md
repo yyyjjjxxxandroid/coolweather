@@ -6,17 +6,17 @@ okHttp
 Glide
 gson
 在写的过程遇见过一些问题：
-
 引入litepal.guolindev:core:3.2.3 报错
-
 问题原因：LitePal的依赖库存放在jcenter里面，而现在jcenter已经停用了
-
 解决办法：引入jar包正常
 
 okHttp3 开源框架下，实现的sendOkHttpRequest ，收到接口地址访问结果，status != ok ，总是onFailure情况。模拟器使用的Android 9.0 应该需要在某处设置一些参数。
+   
+    
     private void queryFromServer(String address , final String type){
         showProgressDialog();
         HttpUtil.sendOkHttpRequest(address, new Callback() {
+
             @Override
             public void onFailure(Call call, IOException e) {
                 //通过runOnUiThread() 方法回到主线程
