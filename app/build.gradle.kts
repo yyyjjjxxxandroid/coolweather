@@ -37,6 +37,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.swiperefreshlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -45,4 +46,6 @@ dependencies {
 
     implementation("com.google.code.gson:gson:2.11.0")
     implementation(files("libs/litepal-2.0.0-src.jar"))
+
+
 }

@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary">
+        android:background="@color/black">
 
         <TextView
             android:id="@+id/title_text"
@@ -21,12 +21,14 @@
 
         <Button
             android:id="@+id/back_button"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="10dp"
             android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
+
+            android:layout_marginTop="40dp"
             android:background="@drawable/ic_back"
+
             />
 
     </RelativeLayout>
