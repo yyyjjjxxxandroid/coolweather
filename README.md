@@ -8,12 +8,14 @@ gson
 在写的过程遇见过一些问题
 okHttp3 开源框架下，实现的sendOkHttpRequest ，收到接口地址访问结果，status != ok ，总是onFailure情况。模拟器使用的Android 9.0 应该需要在某处设置一些参数。(已解决)
 
+
+
+
   private void queryCounties(){
     //访问服务器 获取数据
        String address = "http://guolin.tech/api/china/"+provinceCode + "/" + cityCode;
        queryFromServer(address,"county");
     }
-
     private void queryFromServer(String address , final String type){
         showProgressDialog();
         HttpUtil.sendOkHttpRequest(address, new Callback() {
